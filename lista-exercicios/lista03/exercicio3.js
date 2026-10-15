@@ -11,7 +11,7 @@ const elementosFake = [
     { id: 10, tagName: 'FOOTER', style: { color: 'white', display: 'flex' }, classList: ['footer-area'] }
   ];
 
-  elementosFake.forEach ((item,indice) => {
+  elementosFake.forEach ((item) => {
     if (item.classList.includes('pending')) {
         const pos = item.classList.indexOf('pending')
         item.classList[pos] = 'done'
