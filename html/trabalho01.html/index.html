@@ -28,7 +28,85 @@
     }
 
     .destaque {
-        border-bottom: 1px solid black;
+        border: 1px solid black;
+    }
+
+    .texto-destaque {
+    font-weight: bold; 
+    font-size: 40px;  
+    }
+
+    .horarios {
+      border: 1px solid black;
+      padding: 15px;
+      flex: 1;
+    }
+
+    .localidade {
+      flex: 1;
+      border: 1px solid black;
+      padding: 15px;
+    }
+
+    .informacao {
+      display: flex;
+      border: 1px solid black;
+    }
+
+    .caixa-cardapio {
+      border: 1px solid black;
+      padding: 30px;
+    }
+
+    .item-prato {
+      display: flex;
+      align-items: center; 
+      margin-bottom: 20px; 
+    }
+
+    .foto-prato {
+      width: 60px;
+      height: 60px;
+      object-fit: cover; 
+      margin-right: 15px; 
+      border: 1px solid #ccc; 
+    }
+
+    .linha-conector {
+      flex: 1; 
+      border-bottom: 1px solid black; 
+      margin: 0 10px; 
+    }
+
+    .preco-prato {
+      font-weight: bold; /* Deixa o preço em destaque */
+    }
+
+    .caixa-extra {
+      border: 1px solid black;
+      display: flex;
+    }
+
+    .caixa-de-contato {
+      border: 1px solid black;
+      flex: 1;
+      padding: 15px;
+    }
+
+    .caixa-sem-nada {
+      border: 1px solid black;
+      flex: 1;
+      padding: 15px;
+    }
+
+    .foto-nada {
+      width: 100px;
+      height: 100px;
+      object-fit: cover; 
+      margin-left: auto; 
+      margin-right: 0;
+      display: block;
+      border: 1px solid #ccc; 
     }
 
     </style>
@@ -44,17 +122,77 @@
           <a href="#">CONTATO</a>
         </nav>
         
-        <div class="caixa-extra"></div> 
-      </header>
+    </header>
 
-      <div class="area-de-busca">
+    <main>
+
+      <section class="area-de-busca">
         <p>digite alguma informação para buscar...</p>
-      </div>
+      </section>
 
-      <div class="destaque">
-        <h1>DESTAQUE</h1>
-        <h3>brr brr brr pata pata pata bim bim bim brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot</h3>
-      </div>
+      <section class="destaque">
+        <h1 class="texto-destaque">DESTAQUE</h1>
+        <p>brr brr brr pata pata pata bim bim bim brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot brainrot</p>
+      </section>
+
+      <section class="informacao">
+        
+        <div class="horarios">
+          <h2 class="texto-horarios">HORÁRIOS</h2>
+          <p>tipo eh tipo uh tipo nada ve</p>
+        </div>
+
+        <div class="localidade">
+          <h2>tipo nao</h2>
+        </div>
+
+      </section>
+
+      <section class="caixa-cardapio">
+        <h2>CARDAPIO</h2>
+        
+        <div class="lista-cardapio">
+
+          <div class="item-prato">
+            
+            <img src="https://via.placeholder.com/60" alt="Foto do prato" class="foto-prato">
+            <span class="nome-prato">Hambúrguer Clássico</span>
+            <div class="linha-conector"></div>
+            <span class="preco-prato">R$ 35,00</span>
+        
+          </div>
+
+          <div class="item-prato">
+            
+            <img src="https://via.placeholder.com/60" alt="Foto do prato" class="foto-prato">
+            <span class="nome-prato">Hambúrguer aurudo</span>
+            <div class="linha-conector"></div>
+            <span class="preco-prato">R$ 67,67</span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="caixa-extra">
+
+        <div class="caixa-de-contato">
+        
+          <h2>CONTATO</h2>
+          <p>brr brr brr brr pata pata pata bim bim bim</p>
+
+        </div>
+
+        <div class="caixa-sem-nada">
+          <p>nada com nada...</p>
+          <img src="https://via.placeholder.com/60" alt="nada aqui" class="foto-nada">
+        </div>
+      
+      </section>
+
+    </main>
+
 
 </body>
 </html>
